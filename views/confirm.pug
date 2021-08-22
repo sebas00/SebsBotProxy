@@ -1,0 +1,49 @@
+extends layout
+
+block content
+ 
+ header.slds-global-header_container
+  div.slds-global-header.globalheader
+   div.slds-global-header__item
+   div.slds-global-header__logo.headerlogo
+ div.globalheader    
+ div.slds-card.slds-theme_default
+  
+
+  div.configarea
+   article.slds-card
+    div.slds-card__header.slds-grid
+     header.slds-media.slds-media_center.slds-has-flexi-truncate
+      div.slds-media__figure
+        span.slds-icon_container.slds-icon-standard-account(title="chat")
+          <svg class="slds-icon slds-icon_small" aria-hidden="true">
+            <use xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#live_chat"></use>
+          </svg>
+          span.slds-assistive-text chat
+        
+      
+      div.slds-media__body
+        h2.slds-card__header-title
+          <a href="javascript:void(0);" class="slds-card__header-link slds-truncate" title="Chat">
+            h3.slds-text-heading_small Whatsapp config for !{botconfig.botid}
+          </a>
+        
+      
+      
+    
+  
+    div.slds-card__body.slds-card__body_inner
+        ul
+         li OrgId: !{botconfig.organizationId}
+         li ButtonId: !{botconfig.buttonId}
+         li DeploymentId: !{botconfig.deploymentId}
+         li chat endpoint url: !{botconfig.endpointUrl}
+    footer.slds-card__footer
+     div.slds-media
+      div.slds-media__figure
+       span.slds-avatar.slds-avatar_large
+        img(src="/images/bearmap.png")
+      div.slds-media__body
+       div.whatsapplink
+        a(href="https://api.whatsapp.com/send?phone=14155238886&text=join%20fact-highway" target="_new") Click here to join the number
+        div or send a message to number +14155238886 with the words: join fact-highway

@@ -1,0 +1,16 @@
+export const createSession: string = "System/SessionId";
+export const chasitorInit: string = "Chasitor/ChasitorInit";
+export const resyncSession: string = "System/ResyncSession";
+export const resyncSessionState: string = "Chasitor/ChasitorResyncState";
+export const chasitorNotTyping: string = "Chasitor/ChasitorNotTyping";
+export const chasitorSneakPeek: string = "Chasitor/ChasitorSneakPeek";
+export const chasitorTyping: string = "Chasitor/ChasitorTyping";
+export const chatEnd: string = "Chasitor/ChatEnd";
+export const chatCancel: string = "Chasitor/ChatCancel";
+export const chatMessage: string = "Chasitor/ChatMessage";
+export const customEvent: string = "Chasitor/CustomEvent";
+export const messages: string = "System/Messages";
+export const settings: string = "Visitor/Settings";
+export const availability: string = "Visitor/Availability";
+export const breadCrumb: string = "Visitor/Breadcrumb";
+export const visitorId: string = "Visitor/VisitorId";

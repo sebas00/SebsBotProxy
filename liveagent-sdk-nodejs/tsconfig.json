@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es6",
+        "noImplicitAny": true,
+        "outDir": "liblist",
+        "declaration": true
+    },
+    "include": [
+        "src/*.ts",
+        "types/global.d.ts"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}

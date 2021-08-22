@@ -1,0 +1,67 @@
+extends layout
+
+block content
+ script(src="/javascripts/jquery-3.4.1.min.js")
+ script(src="/javascripts/magic.js")
+ script(src="/javascripts/waconf.js")
+
+ 
+ header.slds-global-header_container
+  div.slds-global-header.globalheader
+   div.slds-global-header__item
+   div.slds-global-header__logo.headerlogo
+ div.globalheader    
+ div.slds-card.slds-theme_default
+  ol.slds-setup-assistant
+   li.slds-setup-assistant__item
+    article.slds-setup-assistant__step
+     div.slds-summary-detail.slds-is-open
+      button.slds-button.slds-button_icon.slds-m-right_x-small.slds-m-top_x-small(title="phone" onclick="toggleOpen(this.parentElement)" id="botfind")
+            <svg class="slds-button__icon slds-summary-detail__action-icon" aria-hidden="true">
+              <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#switch"></use>
+            </svg>
+            <span class="slds-assistive-text">Toggle details for Create Profiles for Your Users</span>
+          
+      div.slds-container_fluid
+       div.slds-summary-detail__title 
+        div.slds-setup-assistant__step-summary
+         h3.slds-setup-assistant__step-summary-title.slds-text-heading_small Whatsapp config
+         p Please enter the phone number of the phone you will demo on.
+      
+       div.slds-setup-assistant__step-detail.slds-summary-detail__content
+          div.slds-form(role="list") 
+           form(method="post" id="botidform")
+            div.form-group
+             div.slds-form-element
+              label.slds-form-element__label(for='botid') <b>Your Phone Number</b> (Whatsapp) or bot name (Google Assist / Alexa / Amazon Lex):
+              div.slds-form-element__control
+               input.slds-input.slds-size_1-of-3(type="text" placeholder='+31655 etc', name='botid', required)
+             div.slds-form-element.slds-p-top_x-small
+              input.slds-button.slds-button_outline-brand(type="submit", value="Go!")
+   
+   
+   li.slds-setup-assistant__item
+    article.slds-setup-assistant__step
+     div.slds-summary-detail
+      button.slds-button.slds-button_icon.slds-m-right_x-small.slds-m-top_x-small(id="botsetup" title="Einstein bot config" aria-controls="step-0-summary-action" aria-expanded="false" onclick="toggleOpen(this.parentElement)" disabled="")
+            <svg class="slds-button__icon slds-summary-detail__action-icon" aria-hidden="true">
+              <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#switch"></use>
+            </svg>
+            <span class="slds-assistive-text">Einstein bot config</span>
+          
+      div.slds-container_fluid
+       div.slds-summary-detail__title 
+        
+        div.slds-setup-assistant__step-summary
+        h3.h3.slds-setup-assistant__step-summary-title.slds-text-heading_small Einstein bot details
+       div.slds-setup-assistant__step-detail.slds-summary-detail__content
+        include snapinparse.pug
+        div.ishidden(id="confdetails")
+         include configwhatsapp.pug
+        
+   li.slds-setup-assistant__item
+    article.slds-setup-assistant__step
+     div.whatsapplink
+      a(href="https://api.whatsapp.com/send?phone=14155238886&text=join%20fact-highway" target="_new") Click here to join the number
+      div or send a message to number +14155238886 with the words: join fact-highway
+   

@@ -1,0 +1,27 @@
+div.botconfig
+      div.slds-form-element.slds-is-editing
+       form.slds-form(method="post" id="config")
+        div.slds-form-element
+         label.slds-form-element__label(for='botid') Botid:
+         div.slds-form-element__control
+          input.slds-input.slds-size_1-of-3(type="text" placeholder='+31655 etc', id='botid' name='botid', required)
+        div.slds-form-element 
+         label.slds-form-element__label(for='orgid') OrgId:
+         div.slds-form-element__control
+          input.slds-input.slds-size_1-of-3(type="text" placeholder='00D', id='organizationId' name='organizationId', required)
+        div.slds-form-element 
+         label.slds-form-element__label(for='buttonid') Chat Button Id:
+         div.slds-form-element__control
+          input.slds-input.slds-size_1-of-3(type="text" , id="buttonId" name='buttonId' required)
+        div.slds-form-element 
+         label.slds-form-element__label(for='chatdeployid') Chat Deployment Id:
+         div.slds-form-element__control
+          input.slds-input.slds-size_1-of-3(type="text" , id='deploymentId' name='deploymentId', required)
+        div.slds-form-element 
+         label.slds-form-element__label(for='chaturl') Chat API Endpoint::
+         div.slds-form-element__control
+          input.slds-input.slds-size_1-of-3(type="text" , name='endpointUrl' id='endpointUrl', required)
+        div.slds-form-element.slds-p-top_small 
+         div.slds-form-element.slds-p-top_small
+          input.slds-button.slds-button_outline-brand(type="submit", value="Save")
+

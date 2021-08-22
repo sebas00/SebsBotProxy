@@ -1,0 +1,18 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.createSession = "System/SessionId";
+exports.chasitorInit = "Chasitor/ChasitorInit";
+exports.resyncSession = "System/ResyncSession";
+exports.resyncSessionState = "Chasitor/ChasitorResyncState";
+exports.chasitorNotTyping = "Chasitor/ChasitorNotTyping";
+exports.chasitorSneakPeek = "Chasitor/ChasitorSneakPeek";
+exports.chasitorTyping = "Chasitor/ChasitorTyping";
+exports.chatEnd = "Chasitor/ChatEnd";
+exports.chatCancel = "Chasitor/ChatCancel";
+exports.chatMessage = "Chasitor/ChatMessage";
+exports.customEvent = "Chasitor/CustomEvent";
+exports.messages = "System/Messages";
+exports.settings = "Visitor/Settings";
+exports.availability = "Visitor/Availability";
+exports.breadCrumb = "Visitor/Breadcrumb";
+exports.visitorId = "Visitor/VisitorId";

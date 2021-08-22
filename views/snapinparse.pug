@@ -1,0 +1,10 @@
+div.rightconf
+       form(method="post" id="websnippet")
+        div.slds-form
+         
+         div.slds-form-element
+          label.slds-form-element__label(for='websnippet') Emedded Deployment Snippet:
+          textarea(rows="4" cols="50" form="websnippet" placeholder='paste snippet code here', name='snippet')
+         div.slds-form-element.slds-p-top_x-small
+              input.slds-button.slds-button_outline-brand(type="submit", value="Parse" class="parsebutton")
+              button.slds-button(onclick="document.getElementById('confdetails').classList.remove('ishidden');document.getElementById('websnippet').classList.add('ishidden');" value="Manual input" class="parsebutton") Manual Input

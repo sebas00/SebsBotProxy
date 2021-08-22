@@ -1,0 +1,16 @@
+export declare const createSession: string;
+export declare const chasitorInit: string;
+export declare const resyncSession: string;
+export declare const resyncSessionState: string;
+export declare const chasitorNotTyping: string;
+export declare const chasitorSneakPeek: string;
+export declare const chasitorTyping: string;
+export declare const chatEnd: string;
+export declare const chatCancel: string;
+export declare const chatMessage: string;
+export declare const customEvent: string;
+export declare const messages: string;
+export declare const settings: string;
+export declare const availability: string;
+export declare const breadCrumb: string;
+export declare const visitorId: string;
